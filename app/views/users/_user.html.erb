@@ -1,0 +1,14 @@
+  <tr>
+    <td><%= link_to user.name, user %></td>
+    <td><%= user.email %></td>
+    <td><%= gravatar_for user, :size => 30 %></td>
+
+  <% if current_user.admin? %> 
+    <td> <%= button_to 'Show', user, :method => :get %></td>
+    <td> <%= button_to 'Edit', edit_user_path(user),:method => :get %></td>
+
+    <td> <%= button_to 'Delete', user, 	:confirm => 'Are you sure?', 
+					:method => :delete, 
+					:title => "Delete #{user.name}" %>  </td>
+  <% end %>
+  </tr>

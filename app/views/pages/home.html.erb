@@ -1,0 +1,31 @@
+<% if signed_in? %>
+  <table class="front" summary="For signed-in users">
+    <tr>
+      <td class="main">
+<h3>Quote of the Day</h3>	
+<script language="JavaScript" src="http://feed2js.org//feed2js.php?src=http%3A%2F%2Fwww.quotationspage.com%2Fdata%2Fqotd.rss&num=1&desc=1&tz=&targ=y&utf=y"  charset="UTF-8" type="text/javascript"></script>
+
+
+
+        <h1 class="micropost">What's On Your Mind?</h1>
+	<p>Create a new S'Talk (Short Talk)
+
+        <%= render 'shared/micropost_form' %>
+        <%= render 'shared/feed' %>
+      </td>
+      <td class="sidebar round">
+        <%= render 'shared/user_info' %>
+        <%= render 'shared/stats' %>
+      </td>
+    </tr>
+  </table>
+<% else %>
+
+<h1>Home</h1>
+ <p>
+   This is the home page for ProblemShared a new type of social network
+ </p>
+
+<%= link_to "Sign up now!", signup_path, :class => "signup_button round" %>
+
+<% end %>

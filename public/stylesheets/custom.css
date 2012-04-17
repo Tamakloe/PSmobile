@@ -1,0 +1,349 @@
+.container {
+  width: 70%;
+ }
+/*STOP NOW*/
+
+
+body {
+	font-size:75%;
+	color:#002900;
+	font-family:"Helvetica Neue", "Arial", "Helvetica", sans-serif;
+	background-image:url('/images/gradientfromtop.gif');
+	background-repeat:repeat-x;
+}
+
+header {
+  padding-top: 20px;
+  padding-bottom:10px;
+}
+
+header img {
+  float:left;
+  padding: 1em;
+  background-image:url('/images/gradientfromtop.gif');
+  background-repeat:repeat-x;
+}
+
+
+section {
+  margin-top: 1em;
+  font-size: 120%;
+  padding: 20px;
+  border:1px solid green;
+	background-image:url('/images/gradientfromtop.gif');
+	background-repeat:repeat-x;
+
+}
+
+section h1 {
+  font-size: 200%;
+  color:#006600;
+}
+
+ol.a {
+   list-style-position:inside;
+   padding:0 0 0 60px;
+}
+
+/* Links */
+
+a {
+  color: #09c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #069;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #069;
+}
+/* Navigation */
+
+nav {
+  float: right;
+}
+
+nav {
+  background-color: white;
+  padding: 0 0.7em;
+  white-space: nowrap;
+  border:1px solid green;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0.2em 0;
+}
+
+nav ul li a {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a:visited {
+  color: #09c;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Sign up button */
+
+a.signup_button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  text-align: center;
+  width: 190px;
+  color: #fff;
+  	background-image:url('/images/gradientfromtop.gif');
+	background-repeat:repeat-x;
+
+  font-size: 150%;
+  font-weight: bold;
+  padding: 20px;
+}
+
+/* Round corners */
+
+.round {
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 10px;
+  width: 710px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer nav {
+  float: none;
+}
+
+/* User show page */
+
+table.profile {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+td.main {
+  width: 70%;
+  padding: 1em;
+}
+
+td.sidebar {
+  width: 30%;
+  padding: 1em;
+  vertical-align: top;
+	background-image:url('/images/gradientfromtop.gif');
+	background-repeat:repeat-x;
+
+}
+
+.profile img.gravatar {
+  border: 1px solid #999;
+  margin-bottom: -15px;
+}
+
+/* Sign Up Page */
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+/* CSS for styling error messages */
+
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* End CSS for styling error messages */
+
+
+ul.users {
+  margin-top: 1em;
+}
+
+.users li {
+  list-style: none;
+}
+
+/* CSS for microposts */
+h1.micropost {
+  margin-bottom: 0.3em;
+}
+
+table.microposts {
+  margin-top: 1em;
+}
+
+table.microposts tr {
+  height: 70px;
+}
+
+table.microposts tr td.gravatar {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  width: 50px;
+}
+
+table.microposts tr td.micropost {
+  border-top: 1px solid #ccc;
+  vertical-align: top;
+  padding-top: 10px;
+}
+
+table.microposts tr td.micropost span.timestamp {
+  display: block;
+  font-size: 85%;
+  color: #666;
+}
+
+div.user_info img {
+  padding-right: 0.1em;
+}
+
+div.user_info a {
+  text-decoration: none;
+}
+
+div.user_info span.user_name {
+  position: absolute;
+}
+
+div.user_info span.microposts {
+  font-size: 80%;
+}
+
+form.new_micropost {
+  margin-bottom: 2em;
+}
+
+form.new_micropost textarea {
+  height: 4em;
+  margin-bottom: 0;
+}
+
+
+/* Styling for dropList  */
+/*-----------------------------------------------------------*/
+
+.dropList_header
+{	
+	/* Start layout CSS  #317082;*/
+	color:#FFF;
+	font-size:1.2em;
+	background-color:#094D72;
+	width:90%;
+	margin: 2% 0 2% 3%;
+	padding: 10px 0 0 20px;
+	height:30px;
+	/* End layout CSS */
+
+	overflow:hidden;
+	cursor:pointer;
+}
+
+.dropList_content
+{	/* Parent box of slide down content */
+	/* Start layout CSS*/
+	background-color:#E2EBED;
+	width:85%;
+	margin: 0 0 0 5%;
+	padding: 0 0 0 5px;
+	
+	
+	/* End layout CSS */
+
+	visibility:hidden;
+	height:0px;
+	overflow:hidden;
+	position:relative;
+
+}
+.dropList_content_content
+{	/* Content that is slided down */
+	padding-top:2em;
+	padding-bottom:2em;
+	padding-right:5%;
+	padding-left: 5%;
+	font-size:1em;
+	position:relative;
+}
+
+/* End of Styling dropList */
+
+/* Lightbox image setting 
+
+#lightbox{
+	
+	position: absolute;
+	top:50%;
+	left:50%;
+	z-index:9999;
+	width:0px;
+	height:0px;
+	margin:100px 0 0 0;
+	background:#fff;
+	text-align:center;
+    
+ 
+}
+
+
+
+ End of Lightbox image setting */

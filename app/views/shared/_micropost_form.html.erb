@@ -1,0 +1,12 @@
+<%= form_for @micropost do |f| %>
+  <%= render 'shared/error_messages', :object => f.object %>
+  <div class="field">
+  <%= observe_field :micropost_content, :frequency => 1,
+      :function => "$('micropost_content').value.length" %>
+  <%= f.text_area :content %>
+
+  </div>
+  <div class="actions">
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>

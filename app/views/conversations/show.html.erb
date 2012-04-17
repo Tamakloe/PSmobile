@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @conversation.title %>
+</p>
+
+
+
+<p>
+  <b>Description:</b>
+  <%= @conversation.description %>
+</p>
+
+<div id="comments">
+  <% unless @comments.nil? %>
+    <% @comments.each do |c| %>
+      <% unless c.content.nil? %>
+      <div class="listing">
+        <%= c.content %>
+      </div>
+      <% end %>
+    <% end %>
+  <% end %>
+</div>
+
+
+<%= render :partial => 'comments/form' %>
+
+
+<div>
+<% if current_user.admin? %> 
+<%= link_to 'Edit', edit_conversation_path(@conversation) %> |
+<% end %>
+</div>
+<%= link_to 'Back', forum_path(@forum) %>

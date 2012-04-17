@@ -1,0 +1,12 @@
+<h1>Listing comments</h1>
+
+<% @comments.each do |comment| %>
+  <div class="listing">
+    <%= comment.content %>
+  </div>
+<% end %>
+
+<br />
+
+<%= link_to 'Back', conversation_path(@conversation) %> | 
+<%= link_to 'New Comment', new_conversation_comment_path(@conversation) %>

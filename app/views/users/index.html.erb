@@ -1,0 +1,22 @@
+<h1>Listing Members</h1>
+
+<%= will_paginate %>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Gravatar</th>
+
+ <% if current_user.admin? %>        
+ <th colspan="3", align="center">Administration Actions</th>
+  </tr>
+<%end%>
+
+    <%= render @users.sort_by(&:name) %>
+
+</table>
+
+<br />
+<%= will_paginate %>
+
+
