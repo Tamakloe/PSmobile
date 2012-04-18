@@ -18,7 +18,7 @@ gem 'will_paginate', '3.0.pre2'
 
 gem 'jquery-rails'
 
-gem 'email_address_validation'
+gem 'email_address_validation', '0.3.3'
 
 group :development do
   gem 'rspec-rails', '2.6.1'
